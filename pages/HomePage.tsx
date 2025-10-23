@@ -1,14 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+const heroImages = [
+  'https://cdn.wallpapersafari.com/73/52/39t0W4.jpg', // Amber Fort
+  'https://s7ap1.scene7.com/is/image/incredibleindia/mehrangarh-fort-jodhpur-rajasthan-hero?qlt=82&ts=1726660826646', // Mehrangarh
+  'https://as1.ftcdn.net/jpg/03/65/53/24/1000_F_365532463_3Wh4GNZMM5ODyMxIp7avyQQBc2OCzUas.jpg', // Lake Pichola
+  'https://rajwadadesertcamp.com/wp-content/uploads/2024/04/Jaisalmer-fort-1024x683-1-1024x656.webp' // Jaisalmer
+];
+
 const HomePage: React.FC = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="animate-fadeIn">
       {/* Hero Section */}
       <section 
-        className="relative h-[60vh] md:h-[80vh] bg-cover bg-center flex items-center justify-center text-white" 
-        style={{backgroundImage: "url('https://picsum.photos/seed/rajasthan_fort/1600/900')"}}
+        className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white overflow-hidden"
       >
+        {/* Background Images */}
+        {heroImages.map((src, index) => (
+          <div
+            key={src}
+            className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+            style={{
+              backgroundImage: `url('${src}')`,
+              opacity: index === currentImageIndex ? 1 : 0,
+            }}
+          />
+        ))}
+
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 text-center p-4">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
@@ -52,7 +82,7 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <img src="https://picsum.photos/seed/rajasthan_culture/800/600" alt="Rajasthan Culture" className="rounded-lg shadow-xl w-full" />
+              <img src="https://as1.ftcdn.net/jpg/03/65/53/24/1000_F_365532463_3Wh4GNZMM5ODyMxIp7avyQQBc2OCzUas.jpg" alt="Rajasthan Culture" className="rounded-lg shadow-xl w-full" />
             </div>
             <div className="lg:w-1/2">
               <p className="text-sm uppercase tracking-widest text-[#003366] font-semibold">Welcome to Rajasthan</p>
@@ -74,10 +104,10 @@ const HomePage: React.FC = () => {
 };
 
 const snapshotItems = [
-  { title: 'Forts & Palaces', desc: 'Live like royalty in historic havelis and palaces.', img: 'https://picsum.photos/seed/fort_palace/400/300' },
-  { title: 'Desert Adventures', desc: 'Experience the golden dunes of the Thar desert.', img: 'https://picsum.photos/seed/desert_adventure/400/300' },
-  { title: 'Vibrant Culture', desc: 'Witness mesmerizing folk dances and music.', img: 'https://picsum.photos/seed/rajasthan_dance/400/300' },
-  { title: 'Iconic Cityscapes', desc: 'Explore the Pink, Blue, and Golden cities.', img: 'https://picsum.photos/seed/jaipur_city/400/300' },
+  { title: 'Forts & Palaces', desc: 'Live like royalty in historic havelis and palaces.', img: 'https://s7ap1.scene7.com/is/image/incredibleindia/mehrangarh-fort-jodhpur-rajasthan-hero?qlt=82&ts=1726660826646' },
+  { title: 'Desert Adventures', desc: 'Experience the golden dunes of the Thar desert.', img: 'https://static.toiimg.com/photo/53317860.cms' },
+  { title: 'Vibrant Culture', desc: 'Witness mesmerizing folk dances and music.', img: 'https://foundation.rajasthan.gov.in/images/dance-7.jpg' },
+  { title: 'Iconic Cityscapes', desc: 'Explore the Pink, Blue, and Golden cities.', img: 'https://as2.ftcdn.net/jpg/02/57/94/47/1000_F_257944720_3Dzk4FwOWBl5O5KZSBaKHyUXpOm7x4jr.jpg' },
 ];
 
 export default HomePage;

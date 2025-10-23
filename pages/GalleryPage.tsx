@@ -1,18 +1,14 @@
 import React from 'react';
 
 const images = [
-  { src: 'https://i.imgur.com/K2yB4Wl.jpeg', alt: 'Amber Fort on a sunny day with a lake in the foreground' },
-  { src: 'https://i.imgur.com/5SDEzfg.jpeg', alt: 'Udaipur City Palace illuminated at dusk, reflecting on the water' },
-  { src: 'https://i.imgur.com/tX2Gq3y.jpeg', alt: 'Jaipur city street brightly lit with festive decorations at night' },
-  { src: 'https://i.imgur.com/c4pS5Wl.jpeg', alt: 'Rajasthani folk dancers in colorful traditional attire performing outdoors' },
-  { src: 'https://i.imgur.com/iC5nJba.jpeg', alt: 'Hawa Mahal in Jaipur with a dramatic sunset sky' },
-  { src: 'https://i.imgur.com/w1iA2mG.jpeg', alt: 'Jaisalmer Fort glowing with golden lights at twilight' },
-  { src: 'https://i.imgur.com/w8q3J9Z.jpeg', alt: 'Panoramic view of Udaipur city and Lake Pichola during the day' },
-  { src: 'https://i.imgur.com/s4a2H0J.jpeg', alt: 'Mehrangarh Fort overlooking the city of Jodhpur at sunset' },
-  { src: 'https://i.imgur.com/t3B2o0l.jpeg', alt: 'Jaisalmer Fort illuminated against a clear night sky' },
-  { src: 'https://i.imgur.com/L7R5k2U.jpeg', alt: 'View of Mehrangarh Fort and the Blue City of Jodhpur at dusk' },
-  { src: 'https://i.imgur.com/f0B27qS.jpeg', alt: 'Another view of Amber Fort showing the winding path up the hill' },
-  { src: 'https://i.imgur.com/w0d4t6F.jpeg', alt: 'A collage of four iconic Rajasthan scenes: Amber Fort, musicians on a boat, folk dancers, and Hawa Mahal' },
+  { src: 'https://cdn.wallpapersafari.com/73/52/39t0W4.jpg', alt: 'Amber Fort, Jaipur' },
+  { src: 'https://as2.ftcdn.net/jpg/02/57/94/47/1000_F_257944720_3Dzk4FwOWBl5O5KZSBaKHyUXpOm7x4jr.jpg', alt: 'Hawa Mahal - Palace of Winds' },
+  { src: 'https://s7ap1.scene7.com/is/image/incredibleindia/mehrangarh-fort-jodhpur-rajasthan-hero?qlt=82&ts=1726660826646', alt: 'Mehrangarh Fort, Jodhpur' },
+  { src: 'https://rajwadadesertcamp.com/wp-content/uploads/2024/04/Jaisalmer-fort-1024x683-1-1024x656.webp', alt: 'Jaisalmer Fort - Golden City' },
+  { src: 'https://s7ap1.scene7.com/is/image/incredibleindia/city-palace-udaipur-rajasthan-1-new-attr-hero?qlt=82&ts=1742171011440', alt: 'City Palace, Udaipur' },
+  { src: 'https://as1.ftcdn.net/jpg/03/65/53/24/1000_F_365532463_3Wh4GNZMM5ODyMxIp7avyQQBc2OCzUas.jpg', alt: 'Lake Pichola, Udaipur' },
+  { src: 'https://static.toiimg.com/photo/53317860.cms', alt: 'Sam Sand Dunes - Desert Safari' },
+  { src: 'https://foundation.rajasthan.gov.in/images/dance-7.jpg', alt: 'Folk Dance & Culture' },
 ];
 
 const GalleryPage: React.FC = () => {
@@ -26,7 +22,7 @@ const GalleryPage: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {images.map((image, index) => (
             <div key={index} className="group overflow-hidden rounded-lg shadow-md aspect-w-1 aspect-h-1">
               <img 

@@ -4,7 +4,7 @@ const destinations = [
   {
     name: "Jaipur",
     title: "Where Palaces Guard the Past",
-    image: "https://picsum.photos/seed/jaipur_hawa_mahal/1200/600",
+    image: "https://as2.ftcdn.net/jpg/02/57/94/47/1000_F_257944720_3Dzk4FwOWBl5O5KZSBaKHyUXpOm7x4jr.jpg",
     description: "The state capital and a UNESCO World Heritage Site. Jaipur is a treasure trove of architectural wonders, bustling bazaars, and vibrant street life. It’s the perfect blend of royal charm and modern energy.",
     landmarks: [
       { name: "Amber Fort", desc: "Majestic hilltop fort; take an elephant ride up the ramparts." },
@@ -16,7 +16,7 @@ const destinations = [
   {
     name: "Udaipur",
     title: "The Venice of the East",
-    image: "https://picsum.photos/seed/udaipur_lake/1200/600",
+    image: "https://s7ap1.scene7.com/is/image/incredibleindia/city-palace-udaipur-rajasthan-1-new-attr-hero?qlt=82&ts=1742171011440",
     description: "A romantic, serene, and beautiful city of artificial lakes and breathtaking architecture. Known for its majestic palaces set against the backdrop of the Aravalli Hills.",
     landmarks: [
       { name: "Lake Pichola", desc: "Enjoy a sunset boat cruise with stunning palace views." },
@@ -28,7 +28,7 @@ const destinations = [
   {
     name: "Jaisalmer",
     title: "The Golden City of Sands",
-    image: "https://picsum.photos/seed/jaisalmer_fort/1200/600",
+    image: "https://rajwadadesertcamp.com/wp-content/uploads/2024/04/Jaisalmer-fort-1024x683-1-1024x656.webp",
     description: "Rising from the heart of the Thar Desert, this city is dominated by the 'living' Jaisalmer Fort. It's the gateway to incredible desert adventures and cultural experiences.",
     landmarks: [
       { name: "Jaisalmer Fort", desc: "A massive sandstone fort, still inhabited, known as 'Sonar Kila'." },

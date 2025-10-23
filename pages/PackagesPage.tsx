@@ -7,7 +7,7 @@ const packages = [
     duration: "7 Days / 6 Nights",
     cities: "Jaipur → Jodhpur → Udaipur",
     price: "₹28,500",
-    image: "https://picsum.photos/seed/udaipur_palace/600/400",
+    image: "https://s7ap1.scene7.com/is/image/incredibleindia/mehrangarh-fort-jodhpur-rajasthan-hero?qlt=82&ts=1726660826646",
     highlights: [
       "Elephant ride at Amer Fort",
       "Sound and Light show at Mehrangarh Fort",
@@ -20,7 +20,7 @@ const packages = [
     duration: "5 Days / 4 Nights",
     cities: "Jodhpur → Jaisalmer",
     price: "₹22,000",
-    image: "https://picsum.photos/seed/jaisalmer_camel/600/400",
+    image: "https://static.toiimg.com/photo/53317860.cms",
     highlights: [
       "Desert Camping with folk performance",
       "Camel or Jeep Safari in the Thar Desert",
@@ -33,7 +33,7 @@ const packages = [
     duration: "6 Days / 5 Nights",
     cities: "Jaipur → Ranthambore → Bharatpur",
     price: "₹35,000",
-    image: "https://picsum.photos/seed/ranthambore_tiger/600/400",
+    image: "https://images.pexels.com/photos/1294723/pexels-photo-1294723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     highlights: [
       "Multiple Jungle Safaris for Tiger spotting",
       "Visit to the historic Ranthambore Fort",
@@ -46,7 +46,7 @@ const packages = [
     duration: "10 Days / 9 Nights",
     cities: "Delhi → Agra → Jaipur → Pushkar → Udaipur",
     price: "₹45,000",
-    image: "https://picsum.photos/seed/pushkar_fair/600/400",
+    image: "https://foundation.rajasthan.gov.in/images/dance-7.jpg",
     highlights: [
       "Covers the famous 'Golden Triangle'",
       "Experience the spiritual atmosphere of Pushkar",
