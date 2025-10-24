@@ -10,10 +10,12 @@ import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
 import ItineraryPage from './pages/ItineraryPage';
 import PartnersPage from './pages/PartnersPage';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="bg-gray-50 text-slate-800 min-h-screen flex flex-col">
         <Header />
         <main className="flex-grow pt-20">

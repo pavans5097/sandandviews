@@ -31,33 +31,58 @@ const ItineraryPage: React.FC = () => {
           <p className="text-2xl text-blue-700 italic mt-2">Forts & Desert Circuit</p>
         </div>
 
-        {/* Itinerary Table */}
-        <div className="overflow-x-auto shadow-lg rounded-lg mb-16">
-          <table className="w-full text-sm text-left text-gray-600">
-            <thead className="text-xs text-white uppercase bg-[#003366]">
-              <tr>
-                <th scope="col" className="px-6 py-4">Day</th>
-                <th scope="col" className="px-6 py-4">Destination & Highlights</th>
-                <th scope="col" className="px-6 py-4">Accommodation</th>
-              </tr>
-            </thead>
-            <tbody>
-              {itineraryData.map((item) => (
-                <tr key={item.day} className="bg-white border-b hover:bg-gray-50">
-                  <td className="px-6 py-4 font-bold text-lg text-slate-900 text-center">{item.day}</td>
-                  <td className="px-6 py-4">
-                    <p className="font-bold text-lg text-[#003366]">{item.destination}</p>
-                    <p className="mt-1 text-gray-700">{item.highlights}</p>
-                  </td>
-                  <td className="px-6 py-4">
-                     <p className="font-semibold text-slate-800">{item.accommodation}</p>
-                     <p className="text-gray-500">{item.location}</p>
-                  </td>
+        {/* Responsive Itinerary Display */}
+        <div className="shadow-lg rounded-lg mb-16 overflow-hidden">
+          {/* Table for medium screens and up */}
+          <div className="hidden md:block">
+            <table className="w-full text-sm text-left text-gray-600">
+              <thead className="text-xs text-white uppercase bg-[#003366]">
+                <tr>
+                  <th scope="col" className="px-6 py-4 w-20 text-center">Day</th>
+                  <th scope="col" className="px-6 py-4">Destination & Highlights</th>
+                  <th scope="col" className="px-6 py-4">Accommodation</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {itineraryData.map((item) => (
+                  <tr key={item.day} className="bg-white border-b hover:bg-gray-50">
+                    <td className="px-6 py-4 font-bold text-lg text-slate-900 text-center align-top">{item.day}</td>
+                    <td className="px-6 py-4">
+                      <p className="font-bold text-lg text-[#003366]">{item.destination}</p>
+                      <p className="mt-1 text-gray-700">{item.highlights}</p>
+                    </td>
+                    <td className="px-6 py-4 align-top">
+                       <p className="font-semibold text-slate-800">{item.accommodation}</p>
+                       <p className="text-gray-500">{item.location}</p>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Card layout for mobile screens */}
+          <div className="block md:hidden">
+            {itineraryData.map((item) => (
+              <div key={item.day} className="p-4 border-b last:border-b-0 bg-white">
+                <div className="flex items-start space-x-4">
+                    <div className="bg-[#003366] text-white rounded-full w-10 h-10 flex-shrink-0 flex items-center justify-center font-bold text-lg mt-1">
+                        {item.day}
+                    </div>
+                    <div>
+                        <p className="font-bold text-lg text-[#003366]">{item.destination}</p>
+                        <div className="mt-1">
+                            <p className="font-semibold text-slate-800">{item.accommodation}</p>
+                            <p className="text-sm text-gray-500">{item.location}</p>
+                        </div>
+                    </div>
+                </div>
+                <p className="mt-3 text-gray-700 text-sm">{item.highlights}</p>
+              </div>
+            ))}
+          </div>
         </div>
+
 
         {/* Experience Highlights Section */}
         <div className="mb-16">
