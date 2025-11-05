@@ -15,7 +15,7 @@ const ContactPage: React.FC = () => {
           {/* Contact Form */}
           <div className="lg:w-2/3 bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Send Us a Message</h2>
-            <form action="https://formspree.io/pavans3057@gmail.com" method="POST">
+            <form action="https://formspree.io/f/xwpwdgjo" method="POST">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <input 
                   type="text" 
