@@ -1,10 +1,11 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const heroImages = [
   'https://cdn.wallpapersafari.com/73/52/39t0W4.jpg', // Amber Fort
   'https://s7ap1.scene7.com/is/image/incredibleindia/mehrangarh-fort-jodhpur-rajasthan-hero?qlt=82&ts=1726660826646', // Mehrangarh
-  'https://as1.ftcdn.net/jpg/03/65/53/24/1000_F_365532463_3Wh4GNZMM5ODyMxIp7avyQQBc2OCzUas.jpg', // Lake Pichola
+  'https://shadesofudaipur.com/wp-content/uploads/elementor/thumbs/Udaipur-Night-Reflections-by-Lake-Pichola-r613gengqqyjhlfztme58hf2r3wo12jls6g2cju7bo.webp', // Lake Pichola
   'https://rajwadadesertcamp.com/wp-content/uploads/2024/04/Jaisalmer-fort-1024x683-1-1024x656.webp' // Jaisalmer
 ];
 
@@ -82,7 +83,7 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <img src="https://as1.ftcdn.net/jpg/03/65/53/24/1000_F_365532463_3Wh4GNZMM5ODyMxIp7avyQQBc2OCzUas.jpg" alt="Rajasthan Culture" className="rounded-lg shadow-xl w-full" />
+              <img src="https://shadesofudaipur.com/wp-content/uploads/elementor/thumbs/Udaipur-Night-Reflections-by-Lake-Pichola-r613gengqqyjhlfztme58hf2r3wo12jls6g2cju7bo.webp" alt="Rajasthan Culture" className="rounded-lg shadow-xl w-full" />
             </div>
             <div className="lg:w-1/2">
               <p className="text-sm uppercase tracking-widest text-[#003366] font-semibold">Welcome to Rajasthan</p>

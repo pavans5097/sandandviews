@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const images = [
@@ -6,7 +7,7 @@ const images = [
   { src: 'https://s7ap1.scene7.com/is/image/incredibleindia/mehrangarh-fort-jodhpur-rajasthan-hero?qlt=82&ts=1726660826646', alt: 'Mehrangarh Fort, Jodhpur' },
   { src: 'https://rajwadadesertcamp.com/wp-content/uploads/2024/04/Jaisalmer-fort-1024x683-1-1024x656.webp', alt: 'Jaisalmer Fort - Golden City' },
   { src: 'https://s7ap1.scene7.com/is/image/incredibleindia/city-palace-udaipur-rajasthan-1-new-attr-hero?qlt=82&ts=1742171011440', alt: 'City Palace, Udaipur' },
-  { src: 'https://as1.ftcdn.net/jpg/03/65/53/24/1000_F_365532463_3Wh4GNZMM5ODyMxIp7avyQQBc2OCzUas.jpg', alt: 'Lake Pichola, Udaipur' },
+  { src: 'https://shadesofudaipur.com/wp-content/uploads/elementor/thumbs/Udaipur-Night-Reflections-by-Lake-Pichola-r613gengqqyjhlfztme58hf2r3wo12jls6g2cju7bo.webp', alt: 'Lake Pichola, Udaipur' },
   { src: 'https://static.toiimg.com/photo/53317860.cms', alt: 'Sam Sand Dunes - Desert Safari' },
   { src: 'https://foundation.rajasthan.gov.in/images/dance-7.jpg', alt: 'Folk Dance & Culture' },
 ];
