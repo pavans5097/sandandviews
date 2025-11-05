@@ -15,21 +15,48 @@ const ContactPage: React.FC = () => {
           {/* Contact Form */}
           <div className="lg:w-2/3 bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Send Us a Message</h2>
-            <form>
+            <form action="https://formspree.io/pavans3057@gmail.com" method="POST">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <input type="text" placeholder="Your Name" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366]" />
-                <input type="email" placeholder="Your Email" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366]" />
+                <input 
+                  type="text" 
+                  name="name" 
+                  placeholder="Your Name" 
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366]" 
+                  required 
+                />
+                <input 
+                  type="email" 
+                  name="email" 
+                  placeholder="Your Email" 
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366]" 
+                  required 
+                />
               </div>
               <div className="mb-6">
-                <input type="text" placeholder="Subject" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366]" />
+                <input 
+                  type="text" 
+                  name="subject" 
+                  placeholder="Subject" 
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366]" 
+                  required 
+                />
               </div>
               <div className="mb-6">
-                <textarea placeholder="Your Message" rows={5} className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366]"></textarea>
+                <textarea 
+                  name="message" 
+                  placeholder="Your Message" 
+                  rows={5} 
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#003366]" 
+                  required
+                ></textarea>
               </div>
               <button type="submit" className="bg-[#003366] hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300 w-full">
                 Submit Inquiry
               </button>
             </form>
+            <p className="text-xs text-gray-500 mt-4 text-center">
+              This form is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+            </p>
           </div>
 
           {/* Contact Info & Why Choose Us */}
